@@ -1,0 +1,152 @@
+//lag ny "<p></p>"
+const para = document.createElement("p");
+
+
+//skriv inni "<p></p>"
+const node = document.createTextNode("This is new.")
+//koble node med para
+para.appendChild(node);
+
+
+console.log(para);
+
+
+//legg para i body på html
+document.body.appendChild(para);
+
+
+
+const artHead = document.createElement("h3");
+const artBody = document.createElement("p");
+
+const title = document.createTextNode("Cool Article About Cats");
+const body = document.createTextNode("cats are assholes.");
+
+const container = document.querySelector("#generated");
+
+artHead.appendChild(title);
+artBody.appendChild(body);
+
+container.appendChild(artHead);
+container.appendChild(artBody);
+
+
+
+
+
+
+
+
+//Concepts
+
+const firstName = "Florence";
+//const introduction = "Hello, my name is " + firstName + ".";
+const introduction = `Hello, my name is ${firstName}.`
+console.log(introduction);
+
+
+
+
+//const title = "Big Technical Event";
+const whatToHave = "good time";
+/*
+const welcome = "Welcome! \n\n" +
+                "This " + title + " is starting today.\n\n" +
+                "Have a " + whatToHave + "!";
+                   
+console.log(welcome);
+*/
+
+console.log(`Welcome!
+This ${title} is starting today.
+Have a ${whatToHave}!`)
+
+
+
+const product = {
+  name: "Chicken Lips",
+  price: 35,
+  expired: false,
+  getExpired: function () {
+    this.expired = !this.expired;
+    console.log(this.expired);
+  },
+} ;
+console.log(product)
+
+
+
+
+
+
+/*
+const multiply = function (n1, n2) {
+
+let x = n1 * n2
+return x;
+}
+
+console.log(multiply(2, 5))
+
+
+const add = function (n1, n2) {
+  let x = n1 + n2
+  return x;
+}
+
+console.log(add(321, 432))
+*/
+
+
+
+/*
+const CP = function () {
+  const colorPicker = [
+    "blue", "red", "orange", "green"
+  ]
+  const randomColor = Math.floor (Math.random()*colorPicker.length)
+  return colorPicker
+}
+
+console.log(CP())
+*/
+
+/*
+let Felix = {
+  firstName: "Felix",
+  age: 13,
+  breed: "Lanchester Heeler",
+  color: "black and brown",
+  size: "small",
+}
+
+console.log(Felix);
+*/
+
+/*
+let birds = ["kjøttmeis", "kråke", "måse", "dompap", "ugle"];
+let sales = [234, 151, 2358, 23, 525];
+let booleans = [true, false, false, true, false];
+
+birds.push("svane");
+
+sales.push(130);
+
+console.log(birds);
+*/
+
+/* 
+for (let i = 0; i <= sales.length; i++) {
+  console.log(sales[i]);
+}
+*/
+
+/*
+let colours = ["red", "pink", "yellow"];
+let numberOfColours = colours.length;
+console.log(numberOfColours);
+*/
+
+// let mixed = [message, 34, true];
+
+// console.log(birds.length);
