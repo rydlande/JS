@@ -12,3 +12,14 @@ img {
 .author {
     font-weight: bold;
 }
+
+
+.card {
+    padding: 16px;
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
