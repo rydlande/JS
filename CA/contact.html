@@ -24,23 +24,38 @@
       </div>
 
       <div>
-        <label for="name">name</label>
-        <input id="name" placeholder="name" type="text" />
+        <label for="name">Name :</label></br>
+        <input
+          id="name"
+          placeholder="name"
+          type="text"
+          oninvalid="alert('required');"
+          required
+        />
       </div>
 
       <div>
-        <label for="subject">subject</label>
-        <input id="subject" placeholder="subject" type="text" />
+        <label for="subject">Subject :</label></br>
+        <input
+          id="subject"
+          placeholder="subject"
+          type="text"
+          pattern=".{10,}"
+        />
       </div>
 
       <div>
-        <label for="email">e-mail adress</label>
+        <label for="email">E-mail :</label></br>
         <input id="email" placeholder="email" type="text" />
       </div>
 
       <div>
-        <label for="adress">adress</label>
-        <input id="adress" placeholder="adress" type="text" />
+        <label for="adress">Adress :</label></br>
+        <input id="adress" placeholder="adress" type="text" pattern=".{25,}" />
+      </div>
+
+      <div>
+        <input id="submit" type="submit" value="Submit" />
       </div>
     </main>
   </body>
