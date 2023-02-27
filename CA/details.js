@@ -15,6 +15,8 @@ const characterCard = () => {
         .then((data) => {
             console.log(data)
 
+            
+
 
                 const title = document.createElement("title");
                 title.innerHTML = data.character;
