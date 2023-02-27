@@ -29,18 +29,14 @@ const getCharacters = () => {
       
 
       data.forEach((wizard) => {
-        loader.classlist.remove("loading");
+        loader.classList.remove("loading");
         
         const { id, character, image, nickname } = wizard;
 
         const card = document.createElement("a");
         card.classList.add("card");
         card.innerHTML = `
-        <div class="intro">
-          <p class="somespace">Discover the Wizarding World</p>
-          <p>Meet our cherished</p>
-          <h1>CHARACTERS</h1>
-          
+        
         <div>
         <div class="card-img">
           <img 
