@@ -2,7 +2,6 @@ const url = "https://harry-potter-api-en.onrender.com/characters";
 
 const main = document.querySelector("main");
 const loader = document.getElementById("loading");
-const textOutput = document.getElementById("showOutput");
 
 
 function displayLoading() {
@@ -10,7 +9,7 @@ function displayLoading() {
   setTimeout(() => {
     
   loader.classList.remove("display");
-  }, 5000);
+  });
 }
 
 function hideLoading() {

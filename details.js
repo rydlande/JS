@@ -2,8 +2,23 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const main = document.querySelector("main");
 const head = document.querySelector("head");
+const loader = document.getElementById("loading");
 
 const id = params.get("id");
+
+
+function displayLoading() {
+  loader.classList.add("display");
+  setTimeout(() => {
+    
+  loader.classList.remove("display");
+  }, 5000);
+}
+
+function hideLoading() {
+  loader.classList.remove("display");
+}
+
 
 
 
@@ -52,6 +67,6 @@ const characterCard = () => {
 
         })
         
-    };
+    }
 
     characterCard();

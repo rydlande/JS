@@ -3,6 +3,23 @@ const subject = document.getElementById("subject").addEventListener("invalid", s
 const email = document.getElementById("email").addEventListener("invalid", emailFunc);
 const adress = document.getElementById("adress").addEventListener("invalid", adressFunc);
 const submit = document.getElementById("submit").submit(); 
+const loader = document.getElementById("loading");
+
+
+function displayLoading() {
+  loader.classList.add("display");
+  setTimeout(() => {
+    
+  loader.classList.remove("display");
+  }, 5000);
+}
+
+function hideLoading() {
+  loader.classList.remove("display");
+}
+
+
+
 
 function nameFunc() {
   alert("Required");
