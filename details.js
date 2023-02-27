@@ -12,7 +12,7 @@ function displayLoading() {
   setTimeout(() => {
     
   loader.classList.remove("display");
-  }, 5000);
+  });
 }
 
 function hideLoading() {
