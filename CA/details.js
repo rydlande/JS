@@ -48,7 +48,6 @@ const characterCard = () => {
         .catch((e) => {
             html.innerHTML = `404 Something went wrong. Please try again later.`
 
-        console.log(e);
         })
         
     };

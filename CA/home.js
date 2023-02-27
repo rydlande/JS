@@ -1,6 +1,22 @@
 const url = "https://harry-potter-api-en.onrender.com/characters";
 
-let main = document.querySelector("main");
+const main = document.querySelector("main");
+const loader = document.getElementById("loading");
+const textOutput = document.getElementById("showOutput");
+
+
+function displayLoading() {
+  loader.classList.add("display");
+  setTimeout(() => {
+    
+  loader.classList.remove("display");
+  }, 5000);
+}
+
+function hideLoading() {
+  loader.classList.remove("display");
+}
+
 
 const getCharacters = () => {
   fetch (url)
@@ -11,6 +27,7 @@ const getCharacters = () => {
       console.log(data);
 
       data.forEach((wizard) => {
+        
         const { id, character, image, nickname } = wizard;
 
         const card = document.createElement("a");
@@ -28,6 +45,7 @@ const getCharacters = () => {
         card.href = `./details.html?id=${wizard.id}`;
 
 
+
         if (!wizard.image) {
           return;
         }
@@ -38,7 +56,8 @@ const getCharacters = () => {
       });
     })
     .catch((e) => {
-      html.innerHTML = `404 Something went wrong. Please try again later.`
+      main.innerHTML = `404 Something went wrong. Please try again later.`
+      console.log(e);
     })
 };
 
