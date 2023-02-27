@@ -102,3 +102,12 @@ ul {
     list-style: none;
 }
 
+input {
+    padding: 12px 60px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+.adress {
+    padding: 90px 60px;
+}
