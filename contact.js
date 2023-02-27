@@ -6,19 +6,6 @@ const submit = document.getElementById("submit").submit();
 const loader = document.getElementById("loading");
 
 
-function displayLoading() {
-  loader.classList.add("display");
-  setTimeout(() => {
-    
-  loader.classList.remove("display");
-  }, 5000);
-}
-
-function hideLoading() {
-  loader.classList.remove("display");
-}
-
-
 
 
 function nameFunc() {

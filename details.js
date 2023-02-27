@@ -57,11 +57,12 @@ const characterCard = () => {
                 </div>`
 
                 main.appendChild(card);
+                loader.classList.remove("loading");
         })
 
         
         .catch((e) => {
-            html.innerHTML = `404 Something went wrong. Please try again later.`
+            main.innerHTML = `404 Something went wrong. Please try again later.`
 
         })
         
